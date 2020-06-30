@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+j",
+    "command": "goToNextReferenceFromEmbeddedEditor",
+    "when": "inReferenceSearchEditor"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "goToPreviousReferenceFromEmbeddedEditor",
+    "when": "inReferenceSearchEditor"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "search.action.focusNextSearchResult",
+    "when": "hasSearchResult"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "search.action.focusPreviousSearchResult",
+    "when": "hasSearchResult"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "goToNextReference",
+    "when": "referenceSearchVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "goToPreviousReference",
+    "when": "referenceSearchVisible"
+  }
+]
