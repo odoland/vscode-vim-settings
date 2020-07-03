@@ -5,6 +5,8 @@
   "vim.handleKeys": {
     "<cmd+d>": false
   },
+
+  // React
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": false,
@@ -22,9 +24,36 @@
     "editor.insertSpaces": true,
     "editor.detectIndentation": true
   },
+
+  // Go settings
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
   "[go]": {
     "editor.tabSize": 8,
-    "editor.insertSpaces": false,
-    "editor.detectIndentation": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+    // Optional: Disable snippets, as they conflict with completion ranking.
+    // "editor.snippetSuggestions": "none",
+  },
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "go.languageServerFlags": [
+    "-rpc.trace", // for more detailed debug logging
+    "serve",
+    "--debug=localhost:6060" // to investigate memory usage, see profiles
+  ],
+  // VS code complains about this, but they will still work
+  "gopls": {
+    // Add parameter placeholders when completing a function.
+    "usePlaceholders": true,
+    // If true, enable additional analyses with staticcheck.
+    // Warning: This will significantly increase memory usage.
+    "staticcheck": false
   }
 }
