@@ -1,4 +1,4 @@
-# Default VSCode settings
+# Default VSCode-VIM settings 
 
 Extensions:
 
