@@ -1,5 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
+  // Navigate inside command + shift + F (find text in file)
   {
     "key": "ctrl+j",
     "command": "goToNextReferenceFromEmbeddedEditor",
@@ -29,5 +30,36 @@
     "key": "ctrl+k",
     "command": "goToPreviousReference",
     "when": "referenceSearchVisible"
+  },
+  // Allows for moving selections when opening command + P, (quick open)
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  // Toggle focus of terminal
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
   }
 ]

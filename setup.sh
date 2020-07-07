@@ -10,5 +10,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 brew install fasd
 
 cp ./.zshrc ~/.zshrc
-cp ./.aliases.zsh ~/./aliases.zsh
-cp ./.p10k.zsh ~/./p10k.zsh
+cp ./.aliases.zsh ~/.aliases.zsh
+# cp ./.p10k.zsh ~/.p10k.zsh
