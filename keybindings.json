@@ -61,5 +61,24 @@
     "key": "ctrl+;",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
+  },
+  // CMD SHIFT E to navigate the folders
+  {
+    // Enters renaming mode
+    "key": "cmd+enter",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    // Saves renaming
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    // Selects, opens folders
+    "key": "enter",
+    "command": "list.select",
+    "when": "listFocus && !inputFocus"
   }
 ]
