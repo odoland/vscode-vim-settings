@@ -55,5 +55,5 @@
     "staticcheck": false
   },
   // For iterm
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "MesloLGS NF"
 }

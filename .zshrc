@@ -99,3 +99,12 @@ export LANG=en_US.UTF-8
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source ~/.aliases.zsh
+
+shopt -s checkwinsize     # Make bash check window size after process ends
+shopt -s globstar         # Have folder/**/thing search all desc of folder
+shopt -s autocd           # If cmd not found, try "cd cmd"
+shopt -s cdspell          # Fix minor spelling errors in cd
+shopt -s histverify       # Confirm history editing
+
+# Don't close shell on C-D
+set -o ignoreeof
