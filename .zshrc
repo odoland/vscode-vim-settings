@@ -109,3 +109,4 @@ set -o ignoreeof
 
 # Use 'code' in vscode terminal
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+eval "$(fasd --init auto)"

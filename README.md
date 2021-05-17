@@ -22,3 +22,8 @@ Extensions:
 
 # Terminal settings
 https://gist.github.com/kevin-smets/8568070
+
+# Apps
+https://github.com/fikovnik/ShiftIt
+https://vimium.github.io/
+https://www.alfredapp.com/
