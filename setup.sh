@@ -16,3 +16,7 @@ brew install the_silver_searcher
 cp ./.zshrc ~/.zshrc
 cp ./.aliases.zsh ~/.aliases.zsh
 cp ./.p10k.zsh ~/.p10k.zsh
+
+# Copy snippets over
+cp go.code-snippets "$HOME/Library/Application\ Support/Code/User/snippets/go.code-snippets" 
+cp react.code-snippets "$HOME/Library/Application\ Support/Code/User/snippets/react.code-snippets" 
