@@ -65,7 +65,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions fasd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,4 +109,7 @@ set -o ignoreeof
 
 # Use 'code' in vscode terminal
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-eval "$(fasd --init auto)"
+
+# fasd init
+eval "$(fasd --init zsh-wcomp-install zsh-hook zsh-ccomp)"
+alias z='fasd_cd -d

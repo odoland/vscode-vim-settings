@@ -23,6 +23,9 @@ Extensions:
 # Terminal settings
 https://gist.github.com/kevin-smets/8568070
 
+`brew install the_silver_searcher`
+`brew install fasd`
+
 # Apps
 https://github.com/fikovnik/ShiftIt
 https://vimium.github.io/
