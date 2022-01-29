@@ -1,30 +1,17 @@
 # Default VSCode-VIM settings 
+Installs:
+- vscode-vim w/ configs
+- vscode w/ custom keyboard bindings + extensions
+- snippets for go and ts
+- zsh + a few handy CLI 
 
-Extensions:
+# Prerequisites:
+- [brew](https://brew.sh/)
+- [vscode](https://code.visualstudio.com/)
+- [iTerm2](https://iterm2.com/)
 
-[vscode-vim](https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.md)
-
-[go](https://github.com/golang/vscode-go)
-
-[python](https://github.com/Microsoft/vscode-python)
-
-[prettier](https://github.com/prettier/prettier-vscode)
-
-[eslint](https://github.com/Microsoft/vscode-eslint)
-
-[docker](https://github.com/microsoft/vscode-docker)
-
-[gitlens](https://github.com/eamodio/vscode-gitlens)
-
-[Color Highlight](https://github.com/egonyans/vscode-ext-color-highlight)
-
-[Bracket Pair Colorizer](https://github.com/CoenraadS/BracketPair)
-
-# Terminal settings
-https://gist.github.com/kevin-smets/8568070
-
-`brew install the_silver_searcher`
-`brew install fasd`
+# Installation:
+`./setup.sh`
 
 # Apps
 https://github.com/fikovnik/ShiftIt

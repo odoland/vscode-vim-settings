@@ -23,3 +23,23 @@ cp ./go.code-snippets "$VSCODE/snippets/go.code-snippets"
 cp ./react.code-snippets "$VSCODE/snippets/react.code-snippets" 
 cp ./settings.json "$VSCODE/settings.json"
 cp ./keybindings.json "$VSCODE/keybindings.json"
+
+# vs code extensions
+code --force --install-extension dbaeumer.vscode-eslint
+code --force --install-extension esbenp.prettier-vscode
+
+code --force --install-extension eamodio.gitlens
+code --force --install-extension ms-azuretools.vscode-docker
+code --force --install-extension ms-vscode-remote.remote-containers
+code --force --install-extension mikestead.dotenv
+code --force --install-extension golang.go
+code --force --install-extension ms-python.python
+code --force --install-extension ms-python.vscode-pylance
+code --force --install-extension mtxr.sqltools
+code --force --install-extension naumovs.color-highlight
+code --force --install-extension ritwickdey.LiveServer
+code --force --install-extension techer.open-in-browser
+code --force --install-extension vscodevim.vim
+code --force --install-extension shyykoserhiy.vscode-spotify
+
+code --list-extensions | xargs echo "installed: "
