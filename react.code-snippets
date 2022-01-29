@@ -15,46 +15,6 @@
   // 	],
   // 	"description": "Log output to console"
   // }
-  "import": {
-    "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "imp",
-    "body": "import ${2} from '${1}';$0"
-  },
-  "importDestructing": {
-    "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "imd",
-    "body": "import { $2 } from '${1}';$0"
-  },
-  "importEverything": {
-    "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "ime",
-    "body": "import * as ${2} from '${1}';$0"
-  },
-  "importAs": {
-    "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "ima",
-    "body": "import { ${2} as ${3} } from '${1}';$0"
-  },
-  "importReact": {
-    "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "imr",
-    "body": "import React from 'react';$0"
-  },
-  "exportDefault": {
-    "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "exp",
-    "body": "export default $1;$0"
-  },
-  "exportDestructing": {
-    "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "exd",
-    "body": "export { $2 } from '${1}';$0"
-  },
-  "exportAs": {
-    "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "exa",
-    "body": "export { ${2} as ${3} } from '${1}';$0"
-  },
   "method": {
     "scope": "javascript,typescript,typescriptreact,javascriptreact",
     "prefix": "met",
@@ -184,31 +144,6 @@
     "body": "console.info(${1});",
     "description": "Displays a message in the console but also displays a blue information icon along with the logged message"
   },
-  "reactClassCompoment": {
-    "prefix": "rcc",
-    "body": [
-      "import React, { Component } from 'react';",
-      "",
-      "interface Props {",
-      "\t${2}",
-      "}",
-      "",
-      "interface State {",
-      "\t${3}",
-      "}",
-      "export default class ${1} extends Component<Props, State> {",
-      "\trender() {",
-      "\t\treturn (",
-      "\t\t\t<>",
-      "\t\t\t\t$0",
-      "\t\t\t</>",
-      "\t\t);",
-      "\t}",
-      "}",
-      ""
-    ],
-    "description": "Creates a React component class with ES7 module system"
-  },
   "reactArrowFunctionExportComponentTS": {
     "scope": "typescript,typescriptreact",
     "prefix": "rfc",
@@ -219,34 +154,13 @@
       "\t${2}",
       "}",
       "",
-      "const ${TM_FILENAME_BASE}: React.FC<${TM_FILENAME_BASE}> = ({${3}}) => {",
+      "export const ${TM_FILENAME_BASE} = ({${3}}: ${TM_FILENAME_BASE}) => {",
       "\treturn (",
       "\t\t<>",
       "\t\t\t$0",
       "\t\t</>",
       "\t);",
       "}",
-      "",
-      "export default ${TM_FILENAME_BASE};",
-      ""
-    ],
-    "description": "Creates a React Arrow Function Component with ES7 module system"
-  },
-  "reactArrowFunctionExportComponentJS": {
-    "scope": "javascript,javascriptreact",
-    "prefix": "rfc",
-    "body": [
-      "import React from 'react';",
-      "",
-      "const ${TM_FILENAME_BASE} = ({${2}}) => {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$0",
-      "\t\t</>",
-      "\t);",
-      "}",
-      "",
-      "export default ${TM_FILENAME_BASE};",
       ""
     ],
     "description": "Creates a React Arrow Function Component with ES7 module system"
@@ -257,18 +171,6 @@
       "import ${TM_DIRECTORY/^.+\\/(.*)$/$1/} from './${TM_DIRECTORY/^.+\\/(.*)$/$1/}';",
       "export default ${TM_DIRECTORY/^.+\\/(.*)$/$1/};",
       ""
-    ],
-    "description": "Imports and exports"
-  },
-  "useEffectAsync": {
-    "prefix": "uea",
-    "body": [
-      "useEffect(() => {",
-      "\tconst asyncWrapper = async () => {",
-      "\t\t${1}",
-      "\t}",
-      "\tasyncWrapper();",
-      "}, [${2}])"
     ],
     "description": "Imports and exports"
   },

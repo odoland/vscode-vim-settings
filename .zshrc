@@ -112,4 +112,4 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # fasd init
 eval "$(fasd --init zsh-wcomp-install zsh-hook zsh-ccomp)"
-alias z='fasd_cd -d
+alias z='fasd_cd -d'

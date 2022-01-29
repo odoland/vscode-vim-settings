@@ -80,5 +80,14 @@
     "key": "enter",
     "command": "list.select",
     "when": "listFocus && !inputFocus"
+  },
+  // Go
+  {
+    "key": "alt+1",
+    "command": "go.test.cursor"
+  },
+  {
+    "key": "alt+2",
+    "command": "go.test.file"
   }
 ]

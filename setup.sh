@@ -18,5 +18,8 @@ cp ./.aliases.zsh ~/.aliases.zsh
 cp ./.p10k.zsh ~/.p10k.zsh
 
 # Copy snippets over
-cp go.code-snippets "$HOME/Library/Application\ Support/Code/User/snippets/go.code-snippets" 
-cp react.code-snippets "$HOME/Library/Application\ Support/Code/User/snippets/react.code-snippets" 
+VSCODE="$HOME/Library/Application Support/Code/User"
+cp ./go.code-snippets "$VSCODE/snippets/go.code-snippets" 
+cp ./react.code-snippets "$VSCODE/snippets/react.code-snippets" 
+cp ./settings.json "$VSCODE/settings.json"
+cp ./keybindings.json "$VSCODE/keybindings.json"
